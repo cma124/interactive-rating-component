@@ -123,6 +123,20 @@ button {
     background-color: var(--text-color);
 }
 
+/* Rating Section Animation */
+.rating-section:hover .star {
+    animation: 0.4s infinite alternate animatestar;
+}
+
+@keyframes animatestar {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
 /* Rating Result Section */
 .rating-result {
     opacity: 0;
@@ -133,6 +147,7 @@ button {
 
 .thanks-pic {
     margin-top: 1.2em;
+    animation: 1s infinite alternate animatethanks;
 }
 
 .rating-text {
@@ -151,6 +166,16 @@ button {
 
 .rating-result p:not(.rating-text) {
     color: var(--light-gray);
+}
+
+/* Rating Result Animation */
+@keyframes animatethanks {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
 }
 
 /* Script Classes */

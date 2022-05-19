@@ -40,3 +40,14 @@ submitBtn.addEventListener('click', () => {
     ratingSection.classList.add('hide');
     ratingResult.classList.add('show');
 })
+
+document.addEventListener('click', e => {
+    if(e.target == document.querySelector('body')) {
+        ratings.forEach(rating => {
+            rating.classList.remove('clicked');
+        });
+
+        ratingSection.classList.remove('hide');
+        ratingResult.classList.remove('show');
+    }
+});
