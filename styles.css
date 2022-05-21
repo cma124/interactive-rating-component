@@ -186,6 +186,7 @@ button {
 
 section.rating-section.hide {
     z-index: 0;
+    opacity: 0;
 }
 
 section.rating-result.show {
